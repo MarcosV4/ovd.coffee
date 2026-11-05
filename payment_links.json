@@ -1,0 +1,8 @@
+{
+  "_nota": "Pega aquí las URLs de Stripe (https://buy.stripe.com/...). Mientras estén vacías, el botón de compra muestra «Próximamente».",
+  "citrus-shock":    { "bean": "", "ground": "" },
+  "forbidden-roast": { "bean": "", "ground": "" },
+  "guilty-pleasure": { "bean": "", "ground": "" },
+  "ovd-duo":         { "bean": "", "ground": "" },
+  "ovd-full-series": { "bean": "", "ground": "" }
+}
