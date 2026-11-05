@@ -1,11 +1,11 @@
-# ovd.coffee — web de ØVD (estática)
+# ovd.coffee — web de ØVD (copia estática de la tienda de Shopify)
 
-Sustituye a la tienda de Shopify. HTML/CSS estático en español (`es/`) e inglés (`en/`); la compra va por enlaces de pago de Stripe.
+Copia fiel de https://ovdcoffee.com (español en `/`, inglés en `/en/`) para publicar en GitHub Pages. Se genera con `tools/mirror.py`: descarga el HTML renderizado, CSS, fuentes e imágenes (1400 px, JPG), quita los scripts de Shopify y sustituye el botón de compra por enlaces de pago de Stripe.
 
-- **Cambiar enlaces de pago:** edita `payment_links.json` (una URL `https://buy.stripe.com/…` por producto y formato) y ejecuta `python3 build.py`.
-- **Textos de los cafés:** `data/products.json` (extraídos del theme de Shopify exportado el 02/11/2026).
-- **Imágenes:** `img/` (copias de las imágenes de respaldo del theme; las fotos que estaban subidas a Shopify no vienen en el export).
+- **Enlaces de pago:** edita `payment_links.json` (una URL `https://buy.stripe.com/…` por producto y opción; `"*"` = enlace por defecto) y ejecuta `python3 tools/mirror.py --offline`. Sin enlace, el botón muestra «Próximamente».
+- **Volver a copiar la web de Shopify:** `python3 tools/mirror.py` (necesita internet; Shopify puede bloquear con su verificación anti-bot).
 - **Publicar:** GitHub → Settings → Pages → *Deploy from a branch* → `main` / `(root)`.
-- **Dominio:** al final, apuntar ovdcoffee.com a GitHub Pages desde Hostinger. No antes de probar la compra.
+- **Dominio:** apuntar ovdcoffee.com a GitHub Pages desde Hostinger solo cuando la compra esté probada.
+- **Qué no existe en la copia:** carrito, cuenta de cliente, búsqueda, reseñas de Judge.me, formularios de Shopify (newsletter, contacto) y sus códigos de descuento.
 
 No se guardan credenciales en este repo.

@@ -1,8 +1,27 @@
 {
-  "_nota": "Pega aquí las URLs de Stripe (https://buy.stripe.com/...). Mientras estén vacías, el botón de compra muestra «Próximamente».",
-  "citrus-shock":    { "bean": "", "ground": "" },
-  "forbidden-roast": { "bean": "", "ground": "" },
-  "guilty-pleasure": { "bean": "", "ground": "" },
-  "ovd-duo":         { "bean": "", "ground": "" },
-  "ovd-full-series": { "bean": "", "ground": "" }
+  "_nota": "Pega aquí las URLs de Stripe (https://buy.stripe.com/...). Clave = opciones elegidas unidas con ' / ' tal como salen en la web; '*' = enlace por defecto del producto. Sin URL, el botón muestra «Próximamente». Después ejecuta: python3 tools/mirror.py --offline",
+  "citrus-shock": {
+    "Grano": "",
+    "Molido": ""
+  },
+  "forbidden-roast": {
+    "Grano": "",
+    "Molido": ""
+  },
+  "guilty-pleasure": {
+    "Grano": "",
+    "Molido": ""
+  },
+  "ovd-duo": {
+    "001 + 002 / EN GRANO": "",
+    "001 + 002 / MOLIDO": "",
+    "001 + 003 / EN GRANO": "",
+    "001 + 003 / MOLIDO": "",
+    "002 + 003 / EN GRANO": "",
+    "002 + 003 / MOLIDO": ""
+  },
+  "ovd-full-series": {
+    "EN GRANO": "",
+    "MOLIDO": ""
+  }
 }
